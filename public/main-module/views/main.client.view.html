@@ -1,0 +1,169 @@
+<div ng-controller="MainController as Main">
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+ <div class="container">
+      <!-- Brand and toggle grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#page-top" class="navbar-brand">Garden List</a>
+      </div>
+
+      <!-- Collect nav links, forms, etc for toggling -->
+      <div id="bs-example-navbar-collapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+         </li>
+          <li class="page-scroll" ng-show="!Main.authentication.user">
+            <a href="/login" target="_self">Log In</a>
+          </li>
+          <li class="page-scroll" ng-show="!Main.authentication.user">
+            <a href="/signup" target="_self">Create a Free Account</a>
+          </li>
+          <li class="page-scroll" ng-show="Main.authentication.user">
+            <a href="/todos">PLANTS</a>
+          </li>
+          <li class="page-scroll" ng-show="Main.authentication.user">
+            <a href="/logout" target="_self">signed in as <span ng-bind="Main.authentication.user.username" ng-show="Main.authentication.user"></span>, Logout?</a>
+          </li>
+        </ul>
+      </div> <!-- Navbar Collapse -->
+    </div> <!-- Container -->
+  </nav>
+<!--HEADER-->
+ <header>
+  <!-- Header -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+   
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+  
+<!--SLIDE ONE-->
+  <div class="carousel-inner">
+    <div class="item active">
+<div class="intro-text">
+                <span class="name">GARDEN LIST</span>
+                <hr class="line-light">
+                <p class="skills">Mongo Express Node Angular powered list.</p>
+                <p class="skills description">Organization and attentive care is key to maintaing any garden life. <br><br><br> </p>
+                <div class="cta">
+                  <a class="button" href="/signup" target="_self">Create a Free Account</a>
+               <br>
+                <br>
+                <br>
+                <br>
+                </div>
+              </div>
+    </div>
+<!--SLIDE THREE-->
+              <!-- <img class="img-responsive" src="img/profile.png" alt=""> -->
+  <div class="item">
+      <div class="intro-text">
+                <span class="name">TRACK</span>
+                <hr class="line-light">
+                <p class="skills">Mongo Express Node Angular powered list.</p>
+                <p class="skills description">Lorem Ipsum dedum venga tanga tongo bingo bango.Lorem Ipsum dedum venga tanga tongo bingo bango.Lorem Ipsum dedum venga tanga tongo bingo bango.
+                Lorem Ipsum dedum venga tanga tongo bingo bango.</p>
+                
+                <div class="cta">
+                  <a class="button" href="/signup" target="_self">Create a Free Account</a>
+               
+                <br>
+                <br>
+                <br>
+                </div>
+              </div>
+    </div>
+<!--SLIDE TWO-->
+     <div class="item">
+<div class="intro-text">
+                <span class="name">ORGANIZE</span>
+                <hr class="line-light">
+                <p class="skills">Mongo Express Node Angular powered list.</p>
+                <p class="skills description">Lorem Ipsum dedum venga tanga tongo bingo bango.Lorem Ipsum dedum venga tanga tongo bingo bango.Lorem Ipsum dedum venga tanga tongo bingo bango.
+                Lorem Ipsum dedum venga tanga tongo bingo bango.</p>
+                
+                <div class="cta">
+                  <a class="button" href="/signup" target="_self">Create a Free Account</a>
+               
+                <br>
+                <br>
+                <br>
+                </div>
+              </div>
+    </div>
+<!--SLIDE THREE-->
+     <div class="item">
+     <div class="intro-text">
+                <span class="name">OPTIMIZE</span>
+                <hr class="line-light">
+                <p class="skills">Mongo Express Node Angular powered list.</p>
+                <p class="skills description">Lorem Ipsum dedum venga tanga tongo bingo bango.Lorem Ipsum dedum venga tanga tongo bingo bango.Lorem Ipsum dedum venga tanga tongo bingo bango.
+                Lorem Ipsum dedum venga tanga tongo bingo bango.</p>
+                
+                <div class="cta">
+                  <a class="button" href="/signup" target="_self">Create a Free Account</a>
+               
+                <br>
+                <br>
+                <br>
+                </div>
+              </div>
+    </div>
+
+
+
+            </div>
+          </div>
+        </div>
+         <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+     </header>
+</div>
+    </header>
+<br><br>
+<!--ABOUT-->
+
+  </div><!--end of .container-->
+         <div class="col-sm-6 feature-col">
+        <div class="feature">
+          <center><h2>CONTACT</h2>
+          <p></p>
+        </div>
+       
+        </div>
+
+
+          <div class="col-sm-6 feature-col">
+        <div class="feature">
+          <h2>SHARE</h2>
+          <p>.</p>
+        </center>
+        </div>
+        </div>
+       
+    </section>
+
+</div>
+</center>
+</div>
+</div>
+</div>
