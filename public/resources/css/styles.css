@@ -5,7 +5,7 @@
 body {
   overflow: hidden;
   font-family: 'Raleway', sans-serif;
-  ba
+  background-color: #f4f7f6;
 
 }
 
@@ -166,11 +166,7 @@ hr.line-primary {
 header {
   text-align: center;
   color: black;
-  background-image: linear-gradient(45deg, #FBB794 2%, #E7717D 10%),
-  linear-gradient(45deg, #F9D4AC 0%, #F5AFAD 20%);
-  background: -webkit-radial-gradient(2% 15%, ellipse cover,
-  rgba(57,173,219,.15)5%,rgba(138,114,76,0) 50%), linear-gradient(to bottom, #E7717D 0%, #FACC9A 100%), 
-  linear-gradient(135deg, #F9D4AC 90%,#F9D4AC 100%);
+  background-image: url('/resources/img/gheader.png');
   background-size: cover;
 }
 
@@ -205,25 +201,6 @@ header .intro-text .cta {
   margin-top: 50px;
 }
 
-header .intro-text .cta .button {
-  background-color: #AFD275;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #FFF;
-  font-weight: 500;
-  font-size: 16px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-header .intro-text .cta .button:hover {
-  text-decoration: none;
-  padding: 15px 25px 1px 25px;
-  border: solid 2px #FFF;
-  color: #FFF;
-  background-color: rgba(255,255,255,0.1);
-}
 
 /*sign in/login in logo image*/
 .in-logo {
@@ -382,7 +359,7 @@ padding-bottom: 10px;
 /*login page*/
 .login {
 background-image: linear-gradient(45deg, #FBB794 2%, #E7717D 10%),
-linear-gradient(45deg, #F9D4AC 0%, #F5AFAD 20%);
+linear-gradient(45deg, #F9D4AC 0%, #F5AFAD 20%) no-repeat;
 background: -webkit-radial-gradient(2% 15%, ellipse cover,
 rgba(57,173,219,.15)5%,rgba(138,114,76,0) 50%), linear-gradient(to bottom, #E7717D 0%, #FACC9A 100%), 
 linear-gradient(135deg, #F9D4AC 90%,#F9D4AC 100%);
@@ -395,8 +372,9 @@ padding-bottom: 10px;
   display: block;
   margin: 0 auto;
   width: 550px;
+  min-width: 300px;
   border-radius: 15px;
-   margin-top: 100px;
+  margin-top: 100px;
   padding-top: 160px;
   padding-right: 10px;
   padding-bottom: 80px;
@@ -815,7 +793,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   text-shadow: 1px 1px 2px #427388;
   border: 2px solid  background-image: linear-gradient(45deg, #FBB794 2%, #E7717D 10%),
   linear-gradient(45deg, #F9D4AC 0%, #F5AFAD 20%);
-    ackground: linear-gradient(to right, #E7717D,#F5AFAD);
+  background: linear-gradient(to right, #E7717D,#F5AFAD);
 }
 .form-control {
     display: block;
@@ -834,4 +812,53 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+/*swipe button on main page*/
+
+[data-wipe] {
+  display: inline-block;
+  padding: 12px 18px;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid #445561;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #445561;
+  overflow: hidden;
+}
+[data-wipe]:before, [data-wipe]:after {
+  content: attr(data-wipe);
+  padding-top: inherit;
+  padding-bottom: inherit;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  color: #F1F1F2;
+  background: #445561;
+}
+[data-wipe]:before {
+  left: 0;
+  text-indent: 18px;
+  width: 0;
+}
+[data-wipe]:after {
+  padding-left: inherit;
+  padding-right: inherit;
+  left: 100%;
+  text-indent: calc(-100% - 36px);
+  transition: 0.2s ease-in-out;
+}
+[data-wipe]:hover:before {
+  width: 100%;
+  transition: width 0.2s ease-in-out;
+}
+[data-wipe]:hover:after {
+  left: 0;
+  text-indent: 0;
+  transition: 0s 0.2s ease-in-out;
 }
